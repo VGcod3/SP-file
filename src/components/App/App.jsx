@@ -7,8 +7,8 @@ import WatchCode from "../../pages/watchCode";
 import WatchText from "../../pages/watchText";
 import MainPage from "../../pages/mainPage";
 
-import Footer from "../footer/Footer.jsx";
-import Header from "../header/Header.jsx";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
 
 import "bootstrap/dist/css/bootstrap.css";
 
