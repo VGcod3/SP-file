@@ -1,0 +1,33 @@
+.textField {
+  min-height: 50vh;
+  margin: 20px;
+  background-color: #1B1B1B;
+  border-radius: 10px;
+}
+.textField .card-header {
+  display: flex;
+  justify-content: end;
+}
+.textField .card-body, .textField .card-header {
+  background-color: #2b2b2b;
+}
+.textField .clipboard-button {
+  font-family: "Montserrat";
+  font-size: 1em;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+.textField .clipboard-button svg {
+  margin-right: 5px;
+}
+.textField code {
+  font-family: "Montserrat";
+  font-size: 1.1em;
+  color: white;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto !important;
+      hyphens: auto !important;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow-y: hidden;
+}

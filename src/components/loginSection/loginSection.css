@@ -1,0 +1,32 @@
+main input {
+  width: 400px;
+  height: 80px;
+  border: 1px solid #00E091;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 30px;
+  text-align: center;
+  color: #000;
+}
+@media screen and (max-width: 576px) {
+  main input {
+    max-width: 100%;
+  }
+}
+main input:focus {
+  outline: 2px solid #00E091;
+}
+main input:hover {
+  outline: 2px solid #00E091;
+}
+main hr {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  main hr {
+    display: block;
+    width: 300px;
+  }
+}

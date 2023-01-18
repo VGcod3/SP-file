@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+main {
+
+    input {
+        width: 400px;
+        height: 80px;
+        border: 1px solid $base-green;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 30px;
+        text-align: center;
+        color: #000;
+
+        @media screen and (max-width: 576px) {
+            max-width: 100%;
+        }
+
+        &:focus {
+            outline: 2px solid $base-green;
+        }
+
+        &:hover {
+            outline: 2px solid $base-green;
+        }
+    }
+
+    hr {
+        display: none;
+
+        @media screen and (max-width: 576px) {
+            display: block;
+            width: 300px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.textField {
+    min-height: 50vh;
+    // padding: 28px 40px;
+    margin: 20px;
+    background-color: $background-color;
+    border-radius: 10px;
+    // border: .2px solid $base-green;
+    // box-shadow: 5px 5px 100px 50px #00E09108;
+
+    .card-header {
+        display: flex;
+        justify-content: end;
+    }
+
+    .card-body, .card-header {
+        background-color: #2b2b2b;
+    }
+
+    .clipboard-button {
+        font-family: "Montserrat";
+        font-size: 1em;
+        padding: 6px 8px;
+        border-radius: 5px;
+        
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    
+    p {
+        font-family: "Montserrat";
+        font-size: 1.1em;
+        color: white;
+        -webkit-hyphens: auto;
+            hyphens: auto !important;
+            word-wrap: break-word;
+            word-break: break-all;
+        overflow-y: hidden;
+    }
+
+
+}
