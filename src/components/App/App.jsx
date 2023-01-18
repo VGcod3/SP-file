@@ -2,13 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import ErrorPage from "../../pages/errorPage";
-import MainPage from "../../pages/MainPage";
 import LoginPage from "../../pages/loginPage";
 import WatchCode from "../../pages/watchCode";
 import WatchText from "../../pages/watchText";
+import MainPage from "../../pages/mainPage";
 
-import Footer from "../footer/Footer";
-import Header from "../header/Header";
+import Footer from "../footer/Footer.jsx";
+import Header from "../header/Header.jsx";
 
 import "bootstrap/dist/css/bootstrap.css";
 
