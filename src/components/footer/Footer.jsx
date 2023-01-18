@@ -9,13 +9,13 @@ const Footer = () => {
           <div className="right">
             <div>Завантажити/скачати файл через Telegram</div>
             <div>
-              <a href="@StayFile_bot">@StayFile_bot</a>
+              <a href="https://t.me/StayFile_bot">@StayFile_bot</a>
             </div>
           </div>
         </div>
 
         <div className="col-12 col-md-6 order-md-first">
-          <div className="left">© Всі права захищені 2022</div>
+          <div className="left">© Всі права захищені 2023</div>
         </div>
       </div>
     </footer>
