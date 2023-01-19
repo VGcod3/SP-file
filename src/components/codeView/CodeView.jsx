@@ -59,7 +59,7 @@ const TextView = () => {
   }, []);
 
   return (
-    <div className="card textField bg-dark container px-0">
+    <div className="card textField bg-dark container px-0 mx-auto">
       <div className="card-header">
         <button
           type="button"
