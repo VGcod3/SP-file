@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 
 export const useHttp = () => {
-  const URL_BASE = "http://api.stayfile.download/file";
+  const URL_BASE = "https://api.stayfile.download/file";
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
