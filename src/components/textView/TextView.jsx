@@ -2,17 +2,19 @@ import React, { useState, useEffect } from "react";
 import Spinner from "../spinner/Spinner";
 import ErrorComponent from "../errorComponent/ErrorComponent";
 
+import { useParams } from "react-router-dom";
+
 import { useHttp } from "../../hooks/http.hook";
 
 import "./textView.scss";
 
 const TextView = () => {
+  const { fileID } = useParams();
+
   const [text, setText] = useState("");
   const [copied, setCopied] = useState(false);
 
   const { loading, request, error } = useHttp();
-
-  const URL = "http://api.stayfile.download/file/v1/t/kHYyb";
 
   const handleCopy = () => {
     setCopied(true);
@@ -20,7 +22,7 @@ const TextView = () => {
   };
 
   useEffect(() => {
-    request(URL)
+    request("t", fileID)
       .then((res) => setText(() => res.data.text))
       .then(() => console.log(text));
   }, []);

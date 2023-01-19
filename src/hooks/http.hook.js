@@ -1,12 +1,16 @@
 import { useState, useCallback } from "react";
 
 export const useHttp = () => {
+  const URL_BASE = "http://api.stayfile.download/file";
+
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const request = useCallback(
     async (
-      url,
+      type,
+      id = type == "t" ? "kHYyb" : "WVuf",
+      version = "v1",
       method = "GET",
       body = null,
       headers = {
@@ -16,7 +20,9 @@ export const useHttp = () => {
       setLoading(true);
 
       try {
-        const response = await fetch(url, { method, body, headers });
+        const reqUrl = `${URL_BASE}/${version}/${type}/${id}`;
+
+        const response = await fetch(reqUrl, { method, body, headers });
 
         if (!response.ok) {
           throw Error(`Could not fetch ${url}, status: ${response.status} `);
@@ -36,9 +42,9 @@ export const useHttp = () => {
     []
   );
 
-  const clearError = useCallback(() => {
-    setError(null);
-  });
+  // const clearError = useCallback(() => {
+  //   setError(null);
+  // });
 
   return { request, error, loading };
 };

@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/login", "dest": "/login" },
+    { "src": "/code/:fileID", "dest": "/code/:fileID" },
+    { "src": "/text/:fileID", "dest": "/text/:fileID" },
+    { "src": "/*", "dest": "/*" }
+  ]
+}
